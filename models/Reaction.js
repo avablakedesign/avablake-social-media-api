@@ -18,7 +18,7 @@ const reactionSchema = new Schema(
         required: true,
        },
        createdAt: {
-        type: Date(),
+        type: Date,
         default: Date.now(),
         get: (date) => {
             return `${date.getMonth()+1}-${date.getDate()}-${date.getFullYear()}`
