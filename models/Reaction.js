@@ -2,11 +2,10 @@ const { Schema, model } = require('mongoose');
 
 const reactionSchema = new Schema(
     {
+        //This auto assigns a new ObjectId for each reaction.
        reactionId: { 
             type: Schema.Types.ObjectId,
-            default: () => {
-                return new Schema.Types.ObjectId()
-            },
+            auto: true,
        },
        reactionBody: {
         type: String,

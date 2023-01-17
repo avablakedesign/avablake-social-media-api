@@ -1,5 +1,5 @@
 const { Schema, model } = require('mongoose');
-
+//Created a schema for the user model. 
 const userSchema = new Schema(
     {
         username: {
@@ -12,6 +12,7 @@ const userSchema = new Schema(
             type: String,
             required: true,
             unique: true,
+            //This validates emails matching the specified regex.
             match: /.+\@.+\..+/
         },
         thoughts: [
@@ -23,7 +24,7 @@ const userSchema = new Schema(
         friends: [
             {
                 type: Schema.Types.ObjectId,
-                ref: 'Friends'
+                ref: 'User'
             },   
         ]
     },
@@ -34,13 +35,13 @@ const userSchema = new Schema(
         }
     }
 );
-
+//This will count the total number of friends a user has and set a new property on the user data returned.
 userSchema
     .virtual('friendCount')
     .get(function () {
         return `${this.friends.length}`
     })
 
-const User = model('user', userSchema);
+const User = model('User', userSchema);
 
 module.exports = User;
