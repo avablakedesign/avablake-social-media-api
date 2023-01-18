@@ -20,7 +20,8 @@ This is a Social Media API programmed by Ava Blake Design.
 - [Tests](#tests)
 - [Questions](#questions)
  ## Usage
-<iframe style="width: 400px; height: 225px; display: inline-block;" src="https://courses.bootcampspot.com/media_objects_iframe/m-4R4ujMh4s9SQtCvhRd2VC8qViYn7k2q4?type=video" allowfullscreen="allowfullscreen" data-mce-src="https://courses.bootcampspot.com/media_objects_iframe/m-4R4ujMh4s9SQtCvhRd2VC8qViYn7k2q4?type=video" data-mce-style="width: 400px; height: 225px; display: inline-block;"></iframe>
+<a href="https://courses.bootcampspot.com/media_objects_iframe/m-4R4ujMh4s9SQtCvhRd2VC8qViYn7k2q4?type=video">Link to video walkthrough</a>
+
  ## License
  This project is covered under MIT.
 https://mit-license.org
